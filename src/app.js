@@ -1,10 +1,17 @@
-const express = require('express');
+import dotenv from 'dotenv'
+import express from 'express';
 const app = express();
 
+//Configurar Servidor
+app.use( express.json() );
+app.use( express.urlencoded({ extended: true }) );
+dotenv.config();
+
 app.get('/', (req, res) => {
-    res.send('Hola Mundo');
+    res.send(`Servidor en el puerto ${process.env.SERVER_PORT}`);
 });
 
-app.listen(3000, () => {
-    console.log(`Servidor en el puerto 3000`);
+//Iniciar Servidor
+app.listen( process.env.SERVER_PORT , () => {
+    console.log(`Servidor en el puerto ${process.env.SERVER_PORT}`);
 });
