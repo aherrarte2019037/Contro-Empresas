@@ -19,9 +19,17 @@
   },
   "homepage": "https://github.com/aherrarte2019037/Curso-Express#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "date-fns": "^2.17.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.15",
-    "nodemon": "^2.0.7"
+    "mongoose-hidden": "^1.9.1",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pdfkit": "^0.11.0"
   }
 }
